@@ -1,0 +1,7 @@
+CORRER FLASK PROYECTO
+
+-----CMD-------
+myenv\Scripts\activate
+cd desktop/FLASK/Backend
+set FLASK_APP=api.py
+flask run
