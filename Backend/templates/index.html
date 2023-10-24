@@ -4,40 +4,112 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Backend/templates/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      .footer1 {
+            border: 0,82px inset #000000; /* Define un borde */
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
+            background: #E8CBC0;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
+      .mi-div {
+            width: 100%; /* Establece el ancho del div al 100% del contenedor */
+            height: 100%; /* Establece la altura del div según tus preferencias */
+            background-image: url('https://github.com/JuanCoronel70/flask/blob/main/Backend/static/css/images/im2.png?raw=true');
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+        }
+
+      .nav {
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border: 0,02px inset #000000; /* Define un borde */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            
+      }
+
+      ::selection {
+        background-color:  linear-gradient(to right, #000000, #4d4642); /* Color de fondo para el texto seleccionado */
+        color: rgb(6, 218, 255); /* Color del texto seleccionado */
+      }
+
+      .mi-texto {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        mix-blend-mode:color-burn;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        margin: 10%;
+      }
+
+    </style>
 </head>
-<body style="font-family: 'EB Garamond'; font-weight: serif; background-color: #fcd5be;">
-    <div class="jumbotron text-center" style="background-color: #f19560;; border-radius: 0%;">
-        <h1 style="font-size: 60px;">Objetivos de desarrollo sostenible (ONU)</h1>
-        <p style="font-size: 25px;">Analitica de textos</p>
-    </div>
 
-    <div class="text-center">
-        <h2>Formulario de Predicción</h2>
-        <form action="/predict" method="POST">
-            <label for="text">Texto a predecir:</label><br>
-            <input type="text" id="text" name="text"><br><br>
-            <input type="submit" value="Predecir">
-        </form>
-    </div>
+<body style="font-family: 'Open Sans', sans-serif;">
+  <div class="mi-div">
 
-    <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 style="font-size: 75px; height: 200px;">Analisis de textos para los ODS</h1>
-            <h3 style="line-height: 250%; text-align: left;">Un proyecto de machine learning para ayudar a la ONU con sus objetivos de desarrollo sostenible.</h3>
+    <div class="row">
+      <div class="col-md-12">
+          <div class="text-center nav d-flex justify-content-center align-items-center" style="height: 140px;">
+              <h1 style="font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: black;">Objetivos de desarrollo sostenible (ONU)</h1>
           </div>
+      </div>
+    </div>
+
+
+    <div>
+        <div class="row" style="margin-top: 100px;">
           <div class="col-md-6">
-            <img src="https://uniandes-my.sharepoint.com/:i:/r/personal/j_coronel_uniandes_edu_co/Documents/Manos.png?csf=1&web=1&e=6JR4Un" alt="Imagen centrada" class="mx-auto img-fluid" style="width: 600px; height: 500px;"">
+            <h1 class="mi-texto nav" style="font-size: 75px; text-align: left; margin-left: 100px;">ANALISIS DE TEXTOS PARA LOS ODS</h1>
+            <h3 style="line-height: 156%; text-align: justify; margin-left: 100px; margin-right: 70px; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: Verdana, Geneva, Tahoma, sans-serif; ">Un proyecto de machine learning para ayudar a la ONU con sus objetivos de desarrollo sostenible.</h3>
+          </div>
+          <div class="col-md-5 text-center nav d-flex justify-content-center align-items-center" style="margin-top: 70px;">
+            <img src="https://github.com/JuanCoronel70/flask/blob/main/Backend/static/css/images/img3.png?raw=true" alt="onu">
           </div>
         </div>
     </div>
 
-    <div class="row" style="height: 500px;"></div>
+    <div class="text-center" style="margin-top: 100px;">
+      <div class="text-center nav d-flex justify-content-center align-items-center" style="height: 140px; background: #E8CBC0;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #52aeec, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #16a4cf, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;">
+        <h2 style="font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color:rgb(0, 0, 0);">Formulario de Predicción</h2>
+      </div>
+    </div>
 
+    <div class="text-center" style="margin-top: 40px;">  
+      <form action="/predict" method="POST">
+          <div style="font-size: 20px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); color:rgb(0, 0, 0);">Texto a predecir</div>
+          <input type="text" id="text" name="text"><br><br>
+          <input type="submit" value="Predecir">
+      </form>
+    </div>
+  
+
+  <div class="row" style="height: 200px;"></div>
+
+</div>
+
+
+<div class="row footer1">
+
+    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+          <img style="width: 80px; height: 102,4px; margin-top: 50px; margin-bottom: 50px; mix-blend-mode:hard-light; filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/University_of_Los_Andes_logo.svg/1200px-University_of_Los_Andes_logo.svg.png" alt="Logo">
+          <p style="margin-left: 20px;"> Universidad de los Andes - 2023 02.</p>
+    </div>
+
+    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+          <h3> @Grupo-28</h3>
+    </div>
+
+    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+            <p>Inteligencia de negocios (BI).</p>
+    </div>
     
+</div>
+  
       
 
     
