@@ -48,7 +48,7 @@ def predict():
         # Devuelve las predicciones en un formato adecuado
         response = {'predictions': predictions.tolist()}
 
-        return json.dumps(response)
+        return render_template('data.html', predictions=response['predictions'])
     else:
         return 'Unsupported method'
 

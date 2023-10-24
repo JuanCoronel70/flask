@@ -23,6 +23,14 @@
             background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
         }
+        
+      .imag2 {
+      transition: transform 0.2s;
+      }
+
+      .imag2:hover {
+          transform: scale(1.1);
+      }
 
       .nav {
             -webkit-backdrop-filter: blur(8px);
@@ -52,7 +60,7 @@
 
     <div class="row">
       <div class="col-md-12">
-          <div class="text-center nav d-flex justify-content-center align-items-center" style="height: 140px;">
+          <div class="imag2 text-center nav d-flex justify-content-center align-items-center" style="height: 140px;">
               <h1 style="font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: black;">Objetivos de desarrollo sostenible (ONU)</h1>
           </div>
       </div>
@@ -62,17 +70,17 @@
     <div>
         <div class="row" style="margin-top: 100px;">
           <div class="col-md-6">
-            <h1 class="mi-texto nav" style="font-size: 75px; text-align: left; margin-left: 100px;">ANALISIS DE TEXTOS PARA LOS ODS</h1>
+            <h1 class="mi-texto nav imag2" style="font-size: 75px; text-align: left; margin-left: 100px;">ANALISIS DE TEXTOS PARA LOS ODS</h1>
             <h3 style="line-height: 156%; text-align: justify; margin-left: 100px; margin-right: 70px; color: black; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-family: Verdana, Geneva, Tahoma, sans-serif; ">Un proyecto de machine learning para ayudar a la ONU con sus objetivos de desarrollo sostenible.</h3>
           </div>
-          <div class="col-md-5 text-center nav d-flex justify-content-center align-items-center" style="margin-top: 70px;">
+          <div class="imag2 col-md-5 text-center nav d-flex justify-content-center align-items-center" style="margin-top: 70px;">
             <img src="https://github.com/JuanCoronel70/flask/blob/main/Backend/static/css/images/img3.png?raw=true" alt="onu">
           </div>
         </div>
     </div>
 
     <div class="text-center" style="margin-top: 100px;">
-      <div class="text-center nav d-flex justify-content-center align-items-center" style="height: 140px; background: #E8CBC0;  /* fallback for old browsers */
+      <div class="imag2 text-center nav d-flex justify-content-center align-items-center" style="height: 140px; background: #E8CBC0;  /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #52aeec, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, #16a4cf, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;">
         <h2 style="font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color:rgb(0, 0, 0);">Formulario de Predicción</h2>
@@ -83,7 +91,7 @@
       <form action="/predict" method="POST">
           <div style="font-size: 20px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); color:rgb(0, 0, 0);">Texto a predecir</div>
           <input type="text" id="text" name="text"><br><br>
-          <input type="submit" value="Predecir">
+          <input type="submit" value="Predecir" class="imag2">
       </form>
     </div>
   
@@ -95,16 +103,16 @@
 
 <div class="row footer1">
 
-    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+    <div class="imag2 col-md-4 text-center d-flex justify-content-center align-items-center">
           <img style="width: 80px; height: 102,4px; margin-top: 50px; margin-bottom: 50px; mix-blend-mode:hard-light; filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/University_of_Los_Andes_logo.svg/1200px-University_of_Los_Andes_logo.svg.png" alt="Logo">
           <p style="margin-left: 20px;"> Universidad de los Andes - 2023 02.</p>
     </div>
 
-    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+    <div class="imag2 col-md-4 text-center d-flex justify-content-center align-items-center">
           <h3> @Grupo-28</h3>
     </div>
 
-    <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+    <div class="imag2 col-md-4 text-center d-flex justify-content-center align-items-center">
             <p>Inteligencia de negocios (BI).</p>
     </div>
     
