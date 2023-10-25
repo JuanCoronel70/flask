@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <style>
+
+        .footer1 {
+            border: 0,82px inset #000000; /* Define un borde */
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
+            background: #E8CBC0;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
         .mi-div {
             width: 100%; /* Establece el ancho del div al 100% del contenedor */
             height: 100%; /* Establece la altura del div según tus preferencias */
-            background-image: url('https://github.com/JuanCoronel70/flask/blob/main/Backend/static/css/images/img4.png?raw=true');
+            background-image: url('https://github.com/JuanCoronel70/flask/blob/main/Backend/static/css/images/img6.png?raw=true');
             background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
         }
@@ -19,7 +28,6 @@
             backdrop-filter: blur(8px);
             border: 0,02px inset #000000; /* Define un borde */
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 2%;
             
       }
       .imag{
@@ -57,14 +65,14 @@
         <div class="row" style="margin-top: 100px;">
             <div class="col-md-6">
                 <div class="imag2 text-center nav d-flex justify-content-center align-items-center" style="height: 140px;">
-                    <h1 style="font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: rgb(221, 218, 218);">Etiqueta predicha (ODS):</h1>
+                    <h1 style="font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: rgb(221, 218, 218);">Etiqueta predicha (ODS):</h1>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="text-center nav d-flex justify-content-center align-items-center" style="height: 140px;">
                     <h1 style="font-size: 60px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: rgb(221, 218, 218);"><ul>
                         {% for prediction in predictions %}
-                            <li>{{ prediction }}</li>
+                           {{ prediction }}
                         {% endfor %}
                     </ul></h1>
                 </div>
@@ -74,7 +82,13 @@
         <div class="row">
             <div class="col-md-6" style="margin-top: 30px;">
                 <div class="imag2 text-center nav d-flex justify-content-center align-items-center" style="margin-left: 10px; height: 140px;">
-                    <h1 style="font-size: 30px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: rgb(223, 220, 220);">Fuentes ODS:</h1>
+                    <h1 style="font-size: 30px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: rgb(223, 220, 220);">Definicion ODS:</h1>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="margin-top: 30px;">
+                <div class="imag2 text-center nav d-flex justify-content-center align-items-center" style="margin-left: 10px; height: 140px;">
+                    <h1 style="font-size: 30px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: rgb(223, 220, 220);">Tecnologias usadas:</h1>
                 </div>
             </div>
         </div>
@@ -102,8 +116,61 @@
                 </div>
             </a>
 
+
+
+
+            <a href="https://aws.amazon.com/es/what-is/logistic-regression/" target="_blank">
+                <div class="col-md-2" style="margin-top: 30px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3344/3344326.png" alt="logistic-regression" class="imag imag2">
+                </div>
+            </a>
+
+            
+            <a href="https://www.iberdrola.com/innovacion/machine-learning-aprendizaje-automatico" target="_blank">
+                <div class="col-md-2" style="margin-top: 30px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8637/8637099.png" alt="" class="imag imag2">
+                </div>
+            </a>
+
+
+            <a href="https://www.linkedin.com/pulse/what-tf-idf-sidharth-panwar" target="_blank">
+                <div class="col-md-2" style="margin-top: 30px;">
+                    <img src="https://i.ytimg.com/vi/G1bof7UL9RU/sddefault.jpg" alt="" class="imag imag2">
+                </div>
+            </a>
+
+            
+
         </div>
 
+        
+
+
+        <div class="text-center nav d-flex justify-content-center align-items-center" style="margin-top: 100px; height: 140px; background: #E8CBC0;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #52aeec, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #16a4cf, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;">
+            <h2 style="font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color:rgb(0, 0, 0);">Con un 99,6% de precision afirmamos que su texto habla del objetivo de desarrollo sostenible #{% for prediction in predictions %}{{ prediction }}{% endfor %}!</h2>
+        </div>
+
+
+
+
+        <div class="row footer1">
+
+            <div class="imag2 col-md-4 text-center d-flex justify-content-center align-items-center">
+                  <img style="width: 80px; height: 102,4px; margin-top: 50px; margin-bottom: 50px; mix-blend-mode:hard-light; filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/University_of_Los_Andes_logo.svg/1200px-University_of_Los_Andes_logo.svg.png" alt="Logo">
+                  <p style="margin-left: 20px;"> Universidad de los Andes - 2023 02.</p>
+            </div>
+        
+            <div class="imag2 col-md-4 text-center d-flex justify-content-center align-items-center">
+                  <h3> @Grupo-28</h3>
+            </div>
+        
+            <div class="imag2 col-md-4 text-center d-flex justify-content-center align-items-center">
+                    <p>Inteligencia de negocios (BI).</p>
+            </div>
+            
+        </div>
 
     </div>
 
