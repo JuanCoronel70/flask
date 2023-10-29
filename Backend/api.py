@@ -10,11 +10,11 @@ from unidecode import unidecode
 # Carga el modelo en español
 nlp = spacy.load("es_core_news_sm")
 
-# NO FUNCIONA
+
 def tokenizar(texto):
     return [token.text for token in nlp(texto) if not token.is_stop]
 
-# NO FUNCIONA
+
 def preprocessor(tokens):
     tokens = [re.sub('[\W]+', ' ', token.lower()) for token in tokens]
     tokens = [unidecode(token) for token in tokens]
